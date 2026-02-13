@@ -2,7 +2,7 @@
 
 ### Le Scanner d'Empreinte Carbone pour le Web
 
-> **Démo en direct :** [https://ecoscore-web.vercel.app](https://ecoscore-web.vercel.app)
+> **Démo en direct :** [https://eco-score-web-le-scanner-d-empreint.vercel.app/](https://eco-score-web-le-scanner-d-empreint.vercel.app/)
 
 Une application SaaS prête pour la production qui analyse l'empreinte carbone de n'importe quel site web. Conçue avec Next.js 16, Supabase et D3.js pour offrir une solution complète de mesure et d'optimisation écologique des sites web.
 
