@@ -21,7 +21,13 @@ export default function SignupPage() {
 
         try {
             const supabase = createClient();
-            const { error } = await supabase.auth.signUp({ email, password });
+            const { error } = await supabase.auth.signUp({
+                email,
+                password,
+                options: {
+                    emailRedirectTo: 'https://eco-score-web-le-scanner-d-empreint.vercel.app/auth/callback',
+                },
+            });
 
             if (error) throw error;
 
