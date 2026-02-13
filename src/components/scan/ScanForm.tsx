@@ -5,10 +5,11 @@ import { useState } from 'react';
 interface ScanFormProps {
     onScanComplete: (data: Record<string, unknown>) => void;
     onScanStart?: () => void;
+    initialUrl?: string;
 }
 
-export default function ScanForm({ onScanComplete, onScanStart }: ScanFormProps) {
-    const [url, setUrl] = useState('');
+export default function ScanForm({ onScanComplete, onScanStart, initialUrl = '' }: ScanFormProps) {
+    const [url, setUrl] = useState(initialUrl);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
